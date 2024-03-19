@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      container {
+        display: flex;
+        background-color: grey;
+        /* Horizontal [default] */
+        justify-content: flex-start;
+        /* Vertical [default] */
+        align-content: center;
+        padding: 24px;
+      }
+      .bx-red {
+        align-content: center;
+        align-self: stretch;
+        background: red;
+        flex-grow: 1;
+        flex-shrink: 1;
+      }
+      .bx-yellow {
+        background: yellow;
+        flex-grow: 3;
+      }
+      .bx-green {
+        background: green;
+        height: 100px;
+        flex-grow: 5;
+      }
+      .bx-blue {
+        background: blue;
+      }
+      .bx-black {
+        background: black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- FLEX CONTAINER -->
+    <container>
+      <!-- FLEX ITEMS -->
+      <div class="box bx-red">RED</div>
+      <div class="box bx-yellow">YELLOW</div>
+      <div class="box bx-green">GREEN</div>
+      <div class="box bx-blue">BLUE</div>
+      <div class="box bx-black">BLACK</div>
+    </container>
+  </body>
+</html>

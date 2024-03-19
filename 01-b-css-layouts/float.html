@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float CSS</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+      /* section {
+        background-color: gold;
+      }
+      .div-green {
+        background-color: green;
+        float: right;
+      }
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        margin-bottom: 16px;
+      }
+      .div-red {
+        background-color: red;
+        float: right;
+      }
+      .div-blue {
+        float: right;
+        background-color: blue;
+      } */
+
+      html {
+        font-family: "Inter";
+      }
+
+      body {
+        background-color: #2e2e2e;
+      }
+
+      .feature-container {
+        width: 820px;
+        background-color: #8f43ee;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 80px;
+        border-radius: 16px;
+        box-shadow: 0 8px rgba(0, 0, 0, 0.122);
+      }
+
+      img {
+        float: left;
+        border-radius: 16px 0 0 16px;
+      }
+
+      /* 
+      Clear Fix - using Float layouts 
+      */
+      .feature-container::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      .content {
+        padding-top: 48px;
+        margin-left: 300px;
+        margin-right: 100px;
+      }
+
+      h2 {
+        margin-top: 0;
+        margin-bottom: 8px;
+        font-weight: 700;
+        font-size: 36px;
+        font-weight: 900;
+        letter-spacing: -1px;
+      }
+
+      p {
+        line-height: 1.6;
+      }
+
+      button {
+        border: none;
+        font-size: 14px;
+        font-family: "Inter";
+        padding: 8px 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+
+      button {
+        background-color: #030637;
+        color: #f7f7f7;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="feature-container">
+      <img src="./img/crp-designer-workspace.jpg" alt="image-designer" />
+      <div class="content">
+        <h2>Designer World.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto minus
+          quidem eaque blanditiis itaque ut maxime doloribus aperiam nulla. Ex
+          ad deserunt nihil modi placeat iste rem quos ratione? Magnam.
+        </p>
+        <button>Get Started</button>
+      </div>
+    </div>
+  </body>
+</html>
