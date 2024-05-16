@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  margin-top: 35px;
+}
+
+nav {
+  width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #161a30;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 12px;
+}
+
+h1 {
+  color: #b6bbc4;
+}
+
+a {
+  color: #f0ece5;
+  transition: background-color 0.44s ease-in-out;
+}
+
+/* LVHA - contents */
+a:link,
+a:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-left: 8px;
+  padding: 3px 12px;
+}
+
+.act-btn {
+  color: #161a30;
+  background-color: #b6bbc4;
+}
+
+.act-btn:hover {
+  color: #b6bbc4;
+  background-color: #161a30;
+}
+
+/* Header Section */
+header {
+  width: 720px;
+  /* background-color: red; */
+  color: #161a30;
+  margin: 25px auto 0;
+  height: 385px;
+  padding: 6px 12px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-heading {
+  font-size: 48px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  font-weight: 900;
+  letter-spacing: -1.5px;
+}
+
+.content-para {
+  line-height: 1.33;
+}
+
+.img-hero {
+  width: 300px;
+}
+
+/* Button Styling */
+.btn {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.33px;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  padding: 6px 12px;
+
+  margin-top: 24px;
+  background-color: #161a30;
+  color: #f0ece5;
+  border: none;
+  transition: background 0.44s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #f0ece5;
+  color: #161a30;
+}
+
+/* SEMANTIC HTML : feature */
+feature {
+  /* background-color: red; */
+  background-color: #b6bbc45b;
+  display: block;
+  width: 720px;
+  font-size: 16px;
+  margin: 0 auto;
+  /* height: 200px; */
+  padding: 36px 12px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.feat {
+  flex-basis: 120px;
+}
+
+.feat h4 {
+  margin: 8px 0;
+}
+
+.ico {
+  fill: #161a30;
+  width: 36px;
+  height: 36px;
+}
+
+/* Feedback - Section */
+feedback {
+  display: flex;
+  align-items: center;
+  width: 720px;
+  height: 30vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+  padding: 36px 12px;
+  column-gap: 32px;
+  flex-direction: row-reverse;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+  flex-grow: 1;
+}
+
+input,
+textarea {
+  border: 0;
+  background-color: #b6bbc4a3;
+  padding: 4px 8px;
+  flex-basis: 100%;
+  resize: none;
+  font-family: "Inter";
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  padding: 6px 12px;
+  background-color: #161a30;
+  color: #b6bbc4;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.about {
+  flex-basis: 200px;
+}
+
+.about h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.ico-feedback {
+  fill: #f0ece5;
+}
+
+.btn-feedback {
+  width: 36px;
+  height: 36px;
+  margin-top: 16px;
+  background-color: #161a30;
+  border-radius: 50%;
+}
+
+/* Testimonial */
+#testimonial {
+  width: 720px;
+  height: 40vh;
+  padding: 24px 36px;
+  margin: 50px auto;
+  column-gap: 16px;
+}
+
+.img-block {
+  width: 100px;
+  height: 100px;
+  background-color: #161a30;
+  margin: 16px 0;
+  border-radius: 50%;
+}
