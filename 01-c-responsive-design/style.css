@@ -1,12 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 * {
+  margin: 0;
   box-sizing: border-box;
 }
 
 html {
-  font-size: 18px;
-  font-family: "Inter";
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
 }
 
 body {
-  margin: 0;
+  background-color: #010;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 900;
+  font-size: 2.33em;
+  letter-spacing: -2px;
+}
+
+button {
+  border: 0.1em solid #fff;
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: inherit;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 1em 2em;
+  margin-top: 1rem;
+  background: none;
+  color: #fff;
+  transition: color 0.22s ease-in-out 0.3s;
+  transition: background-color 0.44s ease-in-out 0.1s;
+}
+
+button:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.container {
+  font-size: 1.35em;
+  line-height: 1.66;
+  margin: 8em;
+  color: #fff;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 5rem;
+}
+
+.container::before {
+  content: "New Arrival";
+  font-weight: 300;
+  display: inline-block;
+  font-size: 0.6em;
+  padding: 0.5em;
+  color: #222;
+  background-color: #e2aabb;
+  position: absolute;
+  transform: translate(0, -110%);
+}
+
+.container::after {
+  content: "";
+  display: block;
+  padding: 2em 4em;
+  background-size: cover;
+  width: 35%;
+}
+
+.container:nth-child(1)::after {
+  background-image: url("./img/two-people-eat-food.jpg");
+}
+.container:nth-child(2)::after {
+  background-image: url("./img/smells-good-image.jpg");
 }
